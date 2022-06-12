@@ -1,6 +1,4 @@
-/*
-    REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
- */
-
-/* css file could be put in ./assets/css/ folder */
-/* link css file in the output .html accordingly */
+.jumbotron-fluid {
+    background-color: #d93e0b;
+    color: white;
+}

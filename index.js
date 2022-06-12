@@ -3,10 +3,19 @@
 ***********************************************************/
 
 // Imports classes for Manager, Engineer, Intern
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
+
 // Imports external package 'inquirer'
+const inquirer = require('inquirer');
+
 // Imports 'path' from node library to be used to create output folder and file name
 //    Hint: __dirname, process.cwd() or you can use relative path without using 'path' library function
+
+
 // Imports 'fs' from node library
+const fs = require('fs');
 
 // Imports page template function and assign the function to a variable
 
