@@ -2,19 +2,29 @@
   REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
 ***********************************************************/
 
-const Engineer = require("../lib/Engineer");
+const exp = require("constants");
+const Engineer = require("../lib/engineer");
 
 // test constructor to set github user
-test("", () => {
+test("Should set github properly via constructor", () => {
+  const results = "GithubName";
+  const employee = new Engineer("Name", 100, "email@gmail.com", results);
 
+  expect(employee.github).toBe(results);
 });
 
 // test get role method. it should return Engineer
-test("", () => {
+test("Should return Engineer with getRole() function", () => {
+  const results = "Engineer";
+  const employee = new Engineer();
 
+  expect(employee.getRole()).toBe(results);
 });
 
 // test get github method. it should return github username
-test("", () => {
-  
+test("Should return github username with getGithub() function", () => {
+  const results = "GithubName";
+  const employee = new Engineer("Name", 100, "email@gmail.com", results);
+
+  expect(employee.getGithub()).toBe(results);
 });

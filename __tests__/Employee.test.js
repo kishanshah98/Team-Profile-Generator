@@ -2,9 +2,6 @@
   REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
 ***********************************************************/
 
-const { newExpression } = require("@babel/types");
-const exp = require("constants");
-const { getSystemErrorName } = require("util");
 const Employee = require("../lib/Employee");
 
 // test instantiation of employee instance
