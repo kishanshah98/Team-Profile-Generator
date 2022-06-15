@@ -12,18 +12,22 @@ const inquirer = require('inquirer');
 
 // Imports 'path' from node library to be used to create output folder and file name
 //    Hint: __dirname, process.cwd() or you can use relative path without using 'path' library function
-
+const path = require("path");
 
 // Imports 'fs' from node library
 const fs = require('fs');
 
 // Imports page template function and assign the function to a variable
+const template = require('./src/page_template');
 
 // Create variables for the output folder and the html file name
 
+
 // Create an empty array to store the team member objects
+const employeeList = [];
 
 // Create an empty array to store employee IDs to be used to check for the dupliates
+const employeeIds = [];
 
 // **********************
 // Main Pfocess
