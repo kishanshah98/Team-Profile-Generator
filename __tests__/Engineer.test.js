@@ -2,7 +2,6 @@
   REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
 ***********************************************************/
 
-const exp = require("constants");
 const Engineer = require("../lib/engineer");
 
 // test constructor to set github user
