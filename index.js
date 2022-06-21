@@ -20,10 +20,11 @@ const employeeIds = [];
 // Calls the starter function to begin program
 init();
 
-// starter function to start the program
+// Starter function to start the program
 function init() {
   createManager();
 
+  // Creates the manager function that asks the user the questions and pushes the results to the teamList array
   function createManager() {
     inquirer
       .prompt([
@@ -77,6 +78,7 @@ function init() {
       });
   };
 
+  // Creates the engineer function that asks the user the questions and pushes the results to the teamList array
   function addEngineer() {
     inquirer
       .prompt([
@@ -109,6 +111,7 @@ function init() {
       })
   };
 
+  // Creates the intern function that asks the user the questions and pushes the results to the teamList array
   function addIntern() {
     inquirer
     .prompt([
@@ -141,6 +144,7 @@ function init() {
     })
   };
 
+  // Writes the HTML file using the team List array
   function buildTeam() {
     if (!fs.existsSync(DIST_DIR)) {
       fs.mkdirSync(DIST_DIR);

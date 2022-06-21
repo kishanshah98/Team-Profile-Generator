@@ -1,6 +1,7 @@
-const buildCards = function(employees) {
-  function buildManager(manager) {
-    return `
+const buildCards = function (employees) {
+    // Page template for Manager cards
+    function buildManager(manager) {
+        return `
     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">${manager.getName()}</h5>
@@ -13,10 +14,11 @@ const buildCards = function(employees) {
                         </ul>
                     </div>
     `
-  };
+    };
 
-  function buildEngineer(engineer) {
-    return `
+    // Page template for Engineer cards
+    function buildEngineer(engineer) {
+        return `
     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">${engineer.getName()}</h5>
@@ -29,10 +31,11 @@ const buildCards = function(employees) {
                         </ul>
                     </div>
     `
-  };
+    };
 
-  function buildIntern(intern) {
-    return `
+    // Page template for Intern cards
+    function buildIntern(intern) {
+        return `
     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title"> ${intern.getName()}</h5>
@@ -45,29 +48,30 @@ const buildCards = function(employees) {
                         </ul>
                     </div>
     `
-  };
+    };
 
-  const allCards = [];
-  const managerHTML = employees.filter(employee => employee.getRole() === 'Manager')
-  .map(manager => buildManager(manager));
-  allCards.push(managerHTML);
+    const allCards = [];
+    const managerHTML = employees.filter(employee => employee.getRole() === 'Manager')
+        .map(manager => buildManager(manager));
+    allCards.push(managerHTML);
 
-  const engineerHTML = employees.filter(employee => employee.getRole() === 'Engineer')
-  .map(engineer => buildEngineer(engineer))
-  .join('');
-  allCards.push(engineerHTML);
+    const engineerHTML = employees.filter(employee => employee.getRole() === 'Engineer')
+        .map(engineer => buildEngineer(engineer))
+        .join('');
+    allCards.push(engineerHTML);
 
-  const internHTML = employees.filter(employee => employee.getRole() === 'Intern')
-  .map(intern => buildIntern(intern))
-  .join('');
-  allCards.push(internHTML);
+    const internHTML = employees.filter(employee => employee.getRole() === 'Intern')
+        .map(intern => buildIntern(intern))
+        .join('');
+    allCards.push(internHTML);
 
-  return allCards.join('');
+    return allCards.join('');
 
 };
 
+// Exports data
 module.exports = employees => {
-  return `
+    return `
   <!DOCTYPE html>
 <html lang="en">
 
