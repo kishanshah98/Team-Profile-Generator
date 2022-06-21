@@ -2,3 +2,24 @@
     background-color: #d93e0b;
     color: white;
 }
+
+.card-container {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-body {
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+.card-title {
+    font-size: 25px;
+}
