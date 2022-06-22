@@ -4,7 +4,7 @@
 In this application, the user is able to input data based on questions asked by the program. First, the user will be asked about information regarding the team manager followed by questions about both the team engineers and team interns. Using this newly collected data, the program will generate a HTML document that consists of the data answered by the user into separate cards for each member of the team. Tests were also run to be sure that all aspects of the code are functioning properly.
 
 Shown below is a screenshot of the application complete.
-![Screenshot](./sample-readme-img.png)
+![Screenshot](./assets/teamgenerator.png)
 
 
 ## Table of Contents
@@ -31,7 +31,7 @@ Shown below is a screenshot of the application complete.
 - Bootstrap
 
 Screencastify Link Below:
-[Screencastify link](https://drive.google.com/file/d/1UmIXb2Wz2F7Ci3-VS4GCOOL8civI_tSg/view)
+[Screencastify link](https://drive.google.com/file/d/1mdh3DLPXka48osErWRS9iRHqfGbmTrLO/view)
 ## Tests
 - By running 'npm run test', tests for each class - employee, manager, engineer, and intern can be performed.
 
